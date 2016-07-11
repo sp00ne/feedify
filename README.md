@@ -84,6 +84,20 @@ Everything is set up, now you just need to pull the trigger. To fire Feedify, ju
   $('.feedify').feedify();
 });</pre>
 
+### Optional — Offset headers
+
+In the case where the header isn't located at the top of your page, there is an optional parameter that can be used before pulling the trigger
+
+<pre>$(function() {
+  $('.feedify').feedify(offset);
+});</pre>
+
+Where offset is an integer pixel value, for instance in the case of 100px offset header:
+
+<pre>$(function() {
+  $('.feedify').feedify(100);
+});</pre>
+
 ### Optional — Feedify theme
 
 Feedify theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. You need to make sure you include at least version 3.3.4 of Bootstrap if you intend to use it.
